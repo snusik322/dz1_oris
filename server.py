@@ -209,7 +209,7 @@ def send_status(conn, player_name):
     send_message(conn, f"TURN {game_data['turn']}")
     if game_data.get("opponent"):
         send_message(conn, f"OPPONENT {game_data['opponent']}")
-    send_message(conn, "STATUS OK")  # без BOARD чтобы не дублировать экран
+    send_message(conn, "STATUS OK")  
 
 
 def broadcast_to_game(player_name, message):
